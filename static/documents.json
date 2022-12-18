@@ -1,0 +1,69 @@
+{
+    "documents": [
+        
+        {
+            "type": "Newsletter",
+            "index": 0,
+            "title": "Desember",
+            "month": 11,
+            "content": "/december.md",
+            "image": "/november.png"
+        },
+        {
+            "type": "Newsletter",
+            "index": 1,
+            "title": "November",
+            "month": 10,
+            "content": "/november.md",
+            "image": "/november.png"
+        },
+        {            
+            "type": "Newsletter",
+            "index": 2,
+            "title": "Oktober",
+            "month": 9,
+            "content": "/october.md",
+            "image": "/october.jfif"
+        },        
+        {
+            "type": "Newsletter",
+            "index": 3,
+            "title": "September",
+            "month": 8,
+            "content": "/september.md",
+            "image": "/september.jfif"
+        },        
+        {
+            "type": "Newsletter",
+            "index": 4,
+            "title": "Juni",
+            "month": 5,
+            "content": "/juni.md",
+            "image": "/juni.jfif"
+        },        
+        {
+            "type": "Newsletter",
+            "index": 5,
+            "title": "April",
+            "month": 3,
+            "content": "/april.md",
+            "image": "/april.jfif"
+        },
+        {
+            "type": "Newsletter",
+            "index": 6,
+            "title": "Mars",            
+            "month": 2,
+            "content": "/mars.md",
+            "image": "/mars.jfif"
+        },
+        {
+            "type": "Newsletter",
+            "index": 6,
+            "title": "Februar",            
+            "month": 1,
+            "content": "/february.md",
+            "image": "/februar.jfif"            
+        }                               
+    ]
+}
