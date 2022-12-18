@@ -4,51 +4,57 @@
     import Calendar from "../components/Calendar.svelte";
     import Slideshow from "../components/Slideshow.svelte";
     import Document from "../components/Document.svelte";
-    import {documents} from "../stores.js";
-	
-    onMount(async () => {
-        const data = await fetch("/documents.json");
-        var loaded =  await data.json();        
-        $documents = loaded.documents;
-    });
+    import {current, index, documents} from "../stores.js";	        
+    import {page} from "$app/stores";
 
     let value = 0;
+    let promise = null;
+
+    onMount(() => {
+      promise = documents.init();
+    })
 </script>
 
-{#if $documents}
-    <section>
-        <h1 class="ontop"> 
-            Årskavalkade
-        </h1>
-        <h2>Forskning & Innovasjon 2022</h2>
+{#await promise}
+  Loading data...
+{:then}
+  {#if $documents}    
+      <section>
+          <h1 class="ontop"> 
+              Årskavalkade
+          </h1>
+          <h2>Forskning & Innovasjon 2022</h2>                  
+      <div class="section-container">
+          <div class="steps-container">
+          <Scrolly bind:$index>              
+              {#each $documents as document, i}
+                  <div class="step" class:active={$index === i}>
+                      <div class="step-content">
+                          {#if document.content}
+                              <Document {document}/>
+                          {/if}
+                      </div>
+                  </div>
+              {/each}
+              <div class="spacer" />
+          </Scrolly>
+          </div>
+          <div class="sticky">              
+            {#if $current}
+              {$current.title}
+            
+              <Slideshow document={$current} />        
+              <Calendar value={$current.month} />
+              {/if}
+          </div>
+      </div>
 
-    <div class="section-container">
-        <div class="steps-container">
-        <Scrolly bind:value>
-            		
-            {#each $documents as document, i}
-                <div class="step" class:active={value === i}>
-                    <div class="step-content">
-                        {#if document.content}
-                            <Document {document}/>
-                        {/if}
-                    </div>
-                </div>
-            {/each}
-            <div class="spacer" />
-        </Scrolly>
-        </div>
-        <div class="sticky">              
-            <Slideshow {value} />        
-            <Calendar {value} />                            
-        </div>
-    </div>        
-
-    <h1> 
-        God jul 🎅🎄 og godt nytt år! 💥🎉
-    </h1>
-    </section>
-{/if}
+      <h1> 
+          God jul 🎅🎄 og godt nytt år! 💥🎉
+      </h1>
+      </section>
+  {/if}
+{/await}
 
 <style>
 	:global(body) {

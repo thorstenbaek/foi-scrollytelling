@@ -15,11 +15,12 @@
      * <Scroll root={null} top={0} bottom={0} increments={100}>
      */
     import { onMount } from "svelte";
+    import {index} from "../stores";
     export let root = null;
     export let top = 0;
     export let bottom = 0;
     export let increments = 100;
-    export let value = undefined;
+    //export let value = undefined;
   
     const steps = [];
     const threshold = [];
@@ -45,8 +46,8 @@
         }
       }
   
-      if (maxRatio > 0) value = maxIndex;
-          else value = undefined;
+      if (maxRatio > 0) $index = maxIndex;
+          else $index = undefined;
     };
   
     const createObserver = (node, index) => {
