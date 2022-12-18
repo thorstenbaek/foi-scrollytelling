@@ -17,21 +17,16 @@
 
     const weekDays = ["ma", "ti", "on", "to", "fr", "lø", "sø"];
     const months = ["Januar", "Februar", "Mars", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Desember"];
-
-    
-        
         //console.log("calendar", document);
-
         $: {
 
-            if ($documents) {
-            document = $documents.filter(d => d.index == value);
-            }
-
-        if (document.length > 0 && document[0].month) {
+            // if ($documents) {
+            // document = $documents.filter(d => d.index == value);
+            // }
+        //if (document.length > 0 && document[0].month) {
             days = [];
 
-            month = new Date(year, document[0].month);
+            month = new Date(year, value);
             console.log("month", value);
 
             if (value >= 0 && value < 12) {
@@ -41,17 +36,17 @@
                     calendar = addDays(calendar, 1);
                 }
             }
-        }
-        else {
-            calendar = null;
-            days = [];
-        }
+        
+            else {
+                calendar = null;
+                days = [];
+            }
     }
 
 </script>
 
 {#if calendar}
-<!-- <div class="calendar-container">
+<div class="calendar-container">
 <div class="calendar">
     <div class="month-indicator">        
       <time datetime={month}>{months[month.getMonth()]} {year}</time>
@@ -70,7 +65,7 @@
       {/each}      
     </div>
   </div>
-</div> -->
+</div>
 {/if}
 <style>
 
