@@ -3,9 +3,7 @@
     
     export let document;
 
-    async function loadMarkdown(name) {
-        
-        console.log("Loading " + name);
+    async function loadMarkdown(name) {       
         const res = await fetch(name);
         const text = await res.text();    
         if (res.ok) {
@@ -21,6 +19,7 @@
 {#await loadMarkdown(document.content)}
     Loading...
 {:then markdown}
+    <h1>{document.icon} {document.title}</h1>
     <div>{@html marked(markdown)}</div>    
 {:catch error}
     {error}

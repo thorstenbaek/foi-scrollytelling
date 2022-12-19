@@ -3,14 +3,23 @@
         
         {
             "type": "Newsletter",
+            "icon": "📆",
             "index": 0,
             "title": "Desember",
             "month": 11,
-            "content": "/december.md",
-            "image": "/november.png"
+            "content": "/december.md"
+        },
+        {
+            "type": "Project",
+            "icon": "✅",
+            "index": 1,
+            "title": "d:hack",
+            "content": "/d-hack.md",
+            "illustration": "/d-hack.svg"
         },
         {
             "type": "Newsletter",
+            "icon": "📆",
             "index": 1,
             "title": "November",
             "month": 10,
@@ -19,14 +28,24 @@
         },
         {            
             "type": "Newsletter",
+            "icon": "📆",
             "index": 2,
             "title": "Oktober",
             "month": 9,
             "content": "/october.md",
             "image": "/october.jfif"
-        },        
+        },    
+        {            
+            "type": "Project",
+            "icon": "✅",
+            "index": 2,
+            "title": "Ryggkirurgi",
+            "content": "/ryggkirurgi.md",
+            "illustration": "/unn.jpg"
+        },              
         {
             "type": "Newsletter",
+            "icon": "📆",
             "index": 3,
             "title": "September",
             "month": 8,
@@ -35,14 +54,16 @@
         },        
         {
             "type": "Newsletter",
+            "icon": "📆",
             "index": 4,
             "title": "Juni",
             "month": 5,
-            "content": "/juni.md",
-            "image": "/juni.jfif"
+            "content": "/june.md",
+            "image": "/june.jpg"
         },        
         {
             "type": "Newsletter",
+            "icon": "📆",
             "index": 5,
             "title": "April",
             "month": 3,
@@ -51,19 +72,21 @@
         },
         {
             "type": "Newsletter",
+            "icon": "📆",
             "index": 6,
             "title": "Mars",            
             "month": 2,
-            "content": "/mars.md",
-            "image": "/mars.jfif"
+            "content": "/march.md",
+            "image": "/march.jfif"
         },
         {
-            "type": "Newsletter",
+            "type": "Newsletter",   
+            "icon": "📆",
             "index": 6,
             "title": "Februar",            
             "month": 1,
             "content": "/february.md",
-            "image": "/februar.jfif"            
+            "image": "/february.jfif"            
         }                               
     ]
 }

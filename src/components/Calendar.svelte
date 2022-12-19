@@ -1,5 +1,5 @@
 <script>
-    import {documents} from "../stores";
+    import {current} from "../stores";
     
     export let value;
 
@@ -19,15 +19,10 @@
     const months = ["Januar", "Februar", "Mars", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Desember"];
         //console.log("calendar", document);
         $: {
-
-            // if ($documents) {
-            // document = $documents.filter(d => d.index == value);
-            // }
-        //if (document.length > 0 && document[0].month) {
+          if ($current) {
+            value = $current.month;
             days = [];
-
             month = new Date(year, value);
-            console.log("month", value);
 
             if (value >= 0 && value < 12) {
                 calendar = month;
@@ -41,6 +36,7 @@
                 calendar = null;
                 days = [];
             }
+          }
     }
 
 </script>
@@ -74,7 +70,7 @@
     justify-content: center;
     align-content: center;    
     top: 100px;
-    left: 72%;
+    left: 66%;
     width: 26%;
     
 }

@@ -3,6 +3,7 @@
     import Scrolly from "../components/Scrolly.svelte";
     import Calendar from "../components/Calendar.svelte";
     import Slideshow from "../components/Slideshow.svelte";
+    import Illustrator from "../components/Illustrator.svelte";
     import Document from "../components/Document.svelte";
     import {current, index, documents} from "../stores.js";	        
     import {page} from "$app/stores";
@@ -24,34 +25,34 @@
               Årskavalkade
           </h1>
           <h2>Forskning & Innovasjon 2022</h2>                  
-      <div class="section-container">
-          <div class="steps-container">
-          <Scrolly bind:$index>              
-              {#each $documents as document, i}
-                  <div class="step" class:active={$index === i}>
-                      <div class="step-content">
-                          {#if document.content}
-                              <Document {document}/>
-                          {/if}
+          <div class="section-container">
+              <div class="steps-container">
+              <Scrolly bind:$index>              
+                  {#each $documents as document, i}
+                      <div class="step" class:active={$index === i}>
+                          <div class="step-content">
+                              {#if document.content}
+                                  <Document {document}/>
+                              {/if}
+                          </div>
                       </div>
-                  </div>
-              {/each}
-              <div class="spacer" />
-          </Scrolly>
+                  {/each}
+                  <div class="spacer" />
+              </Scrolly>
+              </div>
+              <div class="sticky">              
+                {#if $current}
+                  <Slideshow />        
+                  <Calendar />
+                  <Illustrator />
+                {/if}
+              </div>
           </div>
-          <div class="sticky">              
-            {#if $current}
-              {$current.title}
-            
-              <Slideshow document={$current} />        
-              <Calendar value={$current.month} />
-              {/if}
-          </div>
-      </div>
 
-      <h1> 
-          God jul 🎅🎄 og godt nytt år! 💥🎉
-      </h1>
+          <h1> 
+              God jul 🎅🎄 og godt nytt år! 💥🎉
+          </h1>
+          <div class="spacer" />
       </section>
   {/if}
 {/await}
@@ -90,7 +91,7 @@
   .sticky {
     position: sticky;
     top: 0;
-	flex: 1 1 60%;
+	  flex: 1 1 60%;
     width: 60%;
   }
 
@@ -110,8 +111,7 @@
 
   .step-content {
     font-size: 1rem;
-    background: #06082d;
-    opacity: 0.6;
+    background: rgba(6, 8, 45, 0.2);
     color:rgba(255, 255, 255, .2);
     margin-left: 2%;
     border-radius: 10px;
@@ -121,13 +121,14 @@
     justify-content: center;
     transition: background 500ms ease;    
     text-align: left;
-	width: 65%;	
-	min-width: 400px;
+	  width: 65%;
+    max-width: 800px;	
+	  min-width: 400px;
   }
 
 	.step.active .step-content {
-		background: 06082d;
-		color: white;
+		background: rgba(6, 8, 45, 0.6);
+		color: rgba(255, 255, 255, 1.0);
 	}
 	
   .steps-container,

@@ -4,34 +4,34 @@
     import { quintOut } from "svelte/easing";
 </script>
 
-{#if $current && $current.image}
+{#if $current && $current.illustration}
     {#key $current}
     <div class="parent">
         <img class="fullscreen"
             transition:fade={{delay:10, duration:500}}
-            src={$current.image} 
+            src={$current.illustration} 
             alt={$current.title}
         />
     </div>
     {/key}
 {:else}
-    <div/>    
+    <div />    
 {/if}
 
 <style>
-    div.parent {
+    .parent {
         display:flex;
         position:fixed;
-        left:0px;
-        top:0px;
-        width:100%;
-        height:100%;
+        left:67%;
+        top:50%;
+        width:auto;
+        height:auto;
         justify-content:center;
         align-items:center;
     }
 
     img {
-        height:100%; 
-        width: auto;
+        height: auto; 
+        width: 360px;
     }
 </style>
