@@ -43,43 +43,33 @@
 
 {#if calendar}
 <div class="calendar-container">
-<div class="calendar">
-    <div class="month-indicator">        
-      <time datetime={month}>{months[month.getMonth()]} {year}</time>
-    </div>
-    <div class="day-of-week">      
+  <div class="month-indicator">        
+    <time datetime={month}>{months[month.getMonth()]} {year}</time>
+  </div>
+  <div class="day-of-week">      
     {#each weekDays as weekDay}
       <div>{weekDay}</div>
     {/each}
-    </div>
+  </div>
     
-    <div class="date-grid">
-        {#each days as day, i}
-        <button style="{(i == 0)?`grid-column:${day.getDay()}`:''}">
-            <time datetime={day}>{day.getDate()}</time>
-        </button>
-      {/each}      
-    </div>
+  <div class="date-grid">
+    {#each days as day, i}
+      <button style="{(i == 0)?`grid-column:${day.getDay()}`:''}">
+        <time datetime={day}>{day.getDate()}</time>
+      </button>
+    {/each}      
   </div>
 </div>
 {/if}
 <style>
 
-.calendar-container {
-    position: absolute;
-    justify-content: center;
-    align-content: center;    
-    top: 100px;
-    left: 66%;
-    width: 26%;
-    
+.calendar-container {    
+  z-index: 1000;
+  align-content: center;
+  margin: 20px;
+  padding: 20px;
+  font-size: 2em;  
 }
-
-.calendar {
-    position: relative;
-    font-size: 2em;
-}
-
 
 button {
     background: transparent;

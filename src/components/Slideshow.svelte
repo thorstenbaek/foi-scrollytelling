@@ -13,13 +13,12 @@
             alt={$current.title}
         />
     </div>
-    {/key}
-{:else}
-    <div/>    
+    {/key}    
 {/if}
 
 <style>
     div.parent {
+        z-index: -1000;
         display:flex;
         position:fixed;
         left:0px;

@@ -8,7 +8,6 @@
     import {current, index, documents} from "../stores.js";	        
     import {page} from "$app/stores";
 
-    let value = 0;
     let promise = null;
 
     onMount(() => {
@@ -20,32 +19,33 @@
   Loading data...
 {:then}
   {#if $documents}    
-      <section>
           <h1 class="ontop"> 
               Årskavalkade
           </h1>
           <h2>Forskning & Innovasjon 2022</h2>                  
           <div class="section-container">
               <div class="steps-container">
-              <Scrolly bind:$index>              
-                  {#each $documents as document, i}
-                      <div class="step" class:active={$index === i}>
-                          <div class="step-content">
-                              {#if document.content}
-                                  <Document {document}/>
-                              {/if}
-                          </div>
-                      </div>
-                  {/each}
-                  <div class="spacer" />
-              </Scrolly>
+                <Scrolly bind:$index>              
+                    {#each $documents as document, i}
+                        <div class="step" class:active={$index === i}>
+                            <div class="step-content">
+                                {#if document.content}
+                                    <Document {document}/>
+                                {/if}
+                            </div>
+                        </div>
+                    {/each}
+                    <div class="spacer" />
+                </Scrolly>
               </div>
               <div class="sticky">              
-                {#if $current}
-                  <Slideshow />        
-                  <Calendar />
-                  <Illustrator />
-                {/if}
+                <div class="fixed">
+                  {#if $current}
+                    <Calendar />  
+                    <Illustrator />
+                    <Slideshow />   
+                  {/if}
+                </div>
               </div>
           </div>
 
@@ -53,7 +53,6 @@
               God jul 🎅🎄 og godt nytt år! 💥🎉
           </h1>
           <div class="spacer" />
-      </section>
   {/if}
 {/await}
 
@@ -67,9 +66,9 @@
 	}
 	
 	h1 {
-        font-size: 2em;
-		justify-content: center;
-		text-align: center;
+      font-size: 2em;
+		  justify-content: center;
+		  text-align: center;
 	}
 	
 	h2 {
@@ -88,25 +87,16 @@
     height: 40vh;
   }
 
-  .sticky {
-    position: sticky;
-    top: 0;
-	  flex: 1 1 60%;
-    width: 60%;
-  }
-
   .section-container {
-    margin-top: 1em;
+    display: flex;    
     text-align: center;
-    transition: background 100ms;
-    display: flex;
+    transition: background 100ms;        
   }
 
   .step {
-    min-height: 80vh;
-    display: flex;
-    place-items: center;
-    justify-content: left;
+    min-height: 80vh;    
+    /* place-items: center; */
+    /* justify-content: left; */
   }
 
   .step-content {
@@ -116,14 +106,8 @@
     margin-left: 2%;
     border-radius: 10px;
     padding: 1rem 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     transition: background 500ms ease;    
     text-align: left;
-	  width: 65%;
-    max-width: 800px;	
-	  min-width: 400px;
   }
 
 	.step.active .step-content {
@@ -131,13 +115,19 @@
 		color: rgba(255, 255, 255, 1.0);
 	}
 	
-  .steps-container,
-  .sticky {    
-    height: 100%;
+  .sticky {
+    flex: 1;
+    position: sticky;
+    top: 0;
+    align-content: center;    
+  }
+
+  .fixed {
+    position: fixed;
   }
 
   .steps-container {
-    flex: 1 1 40%;
+    flex: 2;
     z-index: 10;
   }
 
@@ -146,13 +136,13 @@
   }
 	
 /* Comment out the following line to always make it 'text-on-top' */
-  @media screen and (max-width: 3000px) {
+@media screen and (max-width: 640px) {
     .section-container {
       flex-direction: column-reverse;
     }
     .sticky {
       width: 100%;
-	  margin: 0;
+	    margin: 0;
     }
   }
 </style>
