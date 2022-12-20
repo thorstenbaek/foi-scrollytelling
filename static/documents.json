@@ -6,15 +6,17 @@
             "icon": "📆",
             "index": 0,
             "title": "Desember",
-            "month": 11,
-            "content": "/december.md"
+            "date": "2022-12-22",
+            "content": "/newsletters/december.md"
         },
         {
             "type": "Project",
             "icon": "✅",
             "index": 1,
             "title": "d:hack",
+            "date": "2022-12-08",
             "content": "/d-hack.md",
+            "image": "/d-hack.jpg",
             "illustration": "/d-hack.svg"
         },
         {
@@ -22,8 +24,8 @@
             "icon": "📆",
             "index": 1,
             "title": "November",
-            "month": 10,
-            "content": "/november.md",
+            "date": "2022-11-30",
+            "content": "/newsletters/november.md",
             "image": "/november.png"
         },
         {            
@@ -31,34 +33,35 @@
             "icon": "📆",
             "index": 2,
             "title": "Oktober",
-            "month": 9,
-            "content": "/october.md",
+            "date": "2022-10-31",
+            "content": "/newsletters/october.md",
             "image": "/october.jfif"
+        },                  
+        {
+            "type": "Newsletter",
+            "icon": "📆",
+            "index": 3,
+            "title": "September",
+            "date": "2022-09-30",
+            "content": "/newsletters/september.md",
+            "image": "/september.jfif"
         },    
         {            
             "type": "Project",
             "icon": "✅",
             "index": 2,
             "title": "Ryggkirurgi",
+            "date": "2022-09-01",
             "content": "/ryggkirurgi.md",
-            "illustration": "/unn.jpg"
-        },              
-        {
-            "type": "Newsletter",
-            "icon": "📆",
-            "index": 3,
-            "title": "September",
-            "month": 8,
-            "content": "/september.md",
-            "image": "/september.jfif"
-        },        
+            "image": "/spinesurgery.jpg"
+        },            
         {
             "type": "Newsletter",
             "icon": "📆",
             "index": 4,
             "title": "Juni",
-            "month": 5,
-            "content": "/june.md",
+            "date": "2022-06-30",
+            "content": "/newsletters/june.md",
             "image": "/june.jpg"
         },        
         {
@@ -66,8 +69,8 @@
             "icon": "📆",
             "index": 5,
             "title": "April",
-            "month": 3,
-            "content": "/april.md",
+            "date": "2022-04-30",
+            "content": "/newsletters/april.md",
             "image": "/april.jfif"
         },
         {
@@ -75,8 +78,8 @@
             "icon": "📆",
             "index": 6,
             "title": "Mars",            
-            "month": 2,
-            "content": "/march.md",
+            "date": "2022-03-31",
+            "content": "/newsletters/march.md",
             "image": "/march.jfif"
         },
         {
@@ -84,8 +87,8 @@
             "icon": "📆",
             "index": 6,
             "title": "Februar",            
-            "month": 1,
-            "content": "/february.md",
+            "date": "2022-02-28",
+            "content": "/newsletters/february.md",
             "image": "/february.jfif"            
         }                               
     ]

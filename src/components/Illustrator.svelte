@@ -22,7 +22,8 @@
     .parent {
         display:flex;
         position:fixed;
-        left:67%;
+        margin: 20px;
+        padding: 20px;
         top:50%;
         width:auto;
         height:auto;

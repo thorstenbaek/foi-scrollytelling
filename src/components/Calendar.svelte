@@ -1,7 +1,7 @@
 <script>
     import {current} from "../stores";
     
-    export let value;
+    let date;
 
     const year = 2022;
 
@@ -17,24 +17,16 @@
 
     const weekDays = ["ma", "ti", "on", "to", "fr", "lø", "sø"];
     const months = ["Januar", "Februar", "Mars", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Desember"];
-        //console.log("calendar", document);
         $: {
-          if ($current) {
-            value = $current.month;
+          if ($current && $current.date) {
+            date = new Date($current.date);
+            month = date.getMonth();
             days = [];
-            month = new Date(year, value);
 
-            if (value >= 0 && value < 12) {
-                calendar = month;
-                while(calendar.getMonth() == value) {
-                    days.push(new Date(year, value, calendar.getDate()))
-                    calendar = addDays(calendar, 1);
-                }
-            }
-        
-            else {
-                calendar = null;
-                days = [];
+            calendar = new Date(year, month, 1);
+            while(calendar.getMonth() == month) {
+                days.push(calendar);
+                calendar = addDays(calendar, 1);
             }
           }
     }
@@ -42,40 +34,57 @@
 </script>
 
 {#if calendar}
-<div class="calendar-container">
-  <div class="month-indicator">        
-    <time datetime={month}>{months[month.getMonth()]} {year}</time>
-  </div>
-  <div class="day-of-week">      
-    {#each weekDays as weekDay}
-      <div>{weekDay}</div>
-    {/each}
-  </div>
-    
-  <div class="date-grid">
-    {#each days as day, i}
-      <button style="{(i == 0)?`grid-column:${day.getDay()}`:''}">
-        <time datetime={day}>{day.getDate()}</time>
-      </button>
-    {/each}      
+<div class="calendar">
+  <div class="calendar-container">
+    <div class="month-indicator">        
+      <time datetime={date}>{months[date.getMonth()]} {year}</time>
+    </div>
+    <div class="day-of-week">      
+      {#each weekDays as weekDay}
+        <div>{weekDay}</div>
+      {/each}
+    </div>
+      
+    <div class="date-grid">
+      {#each days as day, i}
+        <button style="{(i == 0)?`grid-column:${day.getDay()}`:''}" class="{day.getDate()==date.getDate()?'current':''}">
+          <time datetime={day}>{day.getDate()}</time>
+        </button>
+      {/each}      
+    </div>
   </div>
 </div>
 {/if}
 <style>
 
+.calendar {
+  width: 100%;
+  align-content: center;
+}
+
 .calendar-container {    
   z-index: 1000;
-  align-content: center;
   margin: 20px;
   padding: 20px;
   font-size: 2em;  
+  width: 360px;
 }
 
 button {
     background: transparent;
-    border: none;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 14px;
     color: white;
-    font-size: .75em;
+    font-size: .65em;
+}
+
+button.current {
+  border-color: darkred;
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 14px;
 }
 
 .month-indicator {
@@ -96,17 +105,16 @@ button {
 }
 
 .day-of-week > * {
-  font-size: 0.7em;
+  font-size: 0.65em;
   color: white;
   font-weight: 500;
-  letter-spacing: 0.1em;
   /*font-variant: small-caps;*/
   text-align: center;
 }
 
 /* Dates */
 .date-grid {
-  margin-top: 0.5em;
+  margin-top: 0.65em;
 }
 
 /* Positioning the first day */

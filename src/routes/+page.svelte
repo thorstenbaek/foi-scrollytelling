@@ -58,17 +58,17 @@
 
 <style>
 	:global(body) {
-        background: #06082d;
-        color: white;
+    background: #06082d;
+    color: white;
 		overflow-x: hidden;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
 	}
 	
 	h1 {
-      font-size: 2em;
-		  justify-content: center;
-		  text-align: center;
+    font-size: 2em;
+    justify-content: center;
+    text-align: center;
 	}
 	
 	h2 {
@@ -76,13 +76,13 @@
 		text-align: center;
 	}
 
-    :global(a:link, a:active, a:visited) {
-        color: lightgray;
-    }
-    :global(a:hover) {
-        color: white;        
-    }
-	
+  :global(a:link, a:active, a:visited) {
+      color: lightgray;
+  }
+  :global(a:hover) {
+      color: white;        
+  }
+
   .spacer {
     height: 40vh;
   }
@@ -95,8 +95,6 @@
 
   .step {
     min-height: 80vh;    
-    /* place-items: center; */
-    /* justify-content: left; */
   }
 
   .step-content {
@@ -128,6 +126,7 @@
 
   .steps-container {
     flex: 2;
+    max-width: 800px;
     z-index: 10;
   }
 
