@@ -1,11 +1,13 @@
-KNIPS-samarbeidet er i gang! 🎬15. september var det avspark på Fram Kino for innovasjonssamarbeidet mellom Nordlandssykehuset, DIPS og Deepinsight. 48 deltakere ble bedre kjent og jobbet i workshoper med de 5 satsingsområdene i samarbeidet. Se inspotalk om KNIPS fra 23. september 📣
+Open DIPS teamet jobber på spreng med sitt første case - RetinaRisk. Det tråkkes løype for fremtidige partnere og det bli en øvelse i lagsprint som DIPS akter å vinne 🏆
 
-Denne uka har det vært Helseinnovasjonsuke i Bodø med masse aktivitet 🏥 DIPS har blant annet holdt foredrag om [Open DIPS](https://eur01.safelinks.protection.outlook.com/?url=https://companycast.live/player/9e93jrso/&data=05%7c01%7clgb%40dips.no%7c12153a16fc8f494cd17d08daa1f7d5d3%7c2f46c9197c11446584b2e354fb809979%7c0%7c0%7c638000383084374476%7cUnknown%7cTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7c3000%7c%7c%7c&sdata=CGOrTGjoFint/Z6QuFcYcWNjCj5O65QXbXEYUd7vdao%3D&reserved=0), vært med på å åpne LINKEN eHelselab på Nordlandssykehuset, deltatt på workshop om samskaping, hatt stand på sykehuset sammen med andre leverandører og deltatt på paneldebatt! 
+Open DIPS er også vårt nye SkatteFunn-prosjekt for 2021-2023 som gir oss over 4 millioner årlig til alt nybrottsarbeidet 💰
 
-Pål har representert DIPS på høstsamling i ProCardio. ProCardio er et senter for fordringsdrevet innovasjon (SFI) som bruker kunstig intelligens til å bedre forebygging og behandling av hjertesykdom 💓 Fra DIPS er Eivind i full sving med å lage et dashboard innenfor Cardio Oncology sammen med GE Healthcare, et godt testcase for Open DIPS.
+Prosjektet var også tema når næringsminister Jan Christian Vestre og ordfører Ida Pinnerød kom på besøk til Bodøkontoret!
 
-Fra ClinCode-konferansen i Stockholm i september har Thor, Gerd og Jørgen tatt pulsen på hvor man står med automatisering av medisinske koder 🎤 Vi bidro med foredrag om vårt arbeid med kodeforbedring og får siste nytt fra erfaringene med kodestøtte på Karolinska og fra forskerne som jobber med ulike AI-modeller.
+Eivind er med i oppbygginga av det nye teamet i Digital Klinikk. Nye utviklere settes i gang og det letes etter synergier med Open DIPS. Fikk dere forresten med dere at han ble årets koder i 2021 i kåringa fra kode24? 👏 Han har også skrevet et innlegg om hvorfor softwareutviklere bør bry seg om IoT.
 
-Første utgave a Lange Briller 🤓 ble gjennomført med tema Digital Klinikk & DHO. Her tok vi en titt inn i krystallkulen for å synse om fremtidens helsevesen, utfordringer og muligheter. Eivind ledet debatten fra F&I, opptak og tankekart er [tilgjengelig](https://365dips.sharepoint.com/:f:/s/DIPS-Enhet-Medisinsk/Eud56GRI9j9KgSxT1AcHeY4BYjJfyCvbcnnAamVKP2JeIA?e=1XNbjw) (opptaket startet dessverre litt seint). Meld interesse for deltakelse i neste utgave.
+Også så en skikkelig gladsak! DIPS har fått 16 millioner fra Forskningsrådet til pasientapp for kronikere. Prosjektet heter Unity og det er Lalita Heimstad som skal holde i dette sammen med Digital Klinikk gjengen. SINTEF og Nordlandsykehuset blir viktige partnere 🤝
 
-Dyrk utviklergleden med fritidsprosjekter som involverer familien. Eivind viste frem sin app på kjøleskapet som motiverer ungene til gode rutiner ved hjelp av gamification 🏅. [Opptak fra Inspotalk](https://365dips.sharepoint.com/:v:/s/Inspotalk/EaOPk8g-lYFMhpD6ZPiY0VYB8E0ftq88dpWBl2NmumEIUA?e=umRFag]).
+Thor jobber sammen med Bifrost med å sjekke ut hvordan vi kan realisere SMART on OpenEHR! Dette gir oss helt nye muligheter for å dele kliniske data på web og mobil. 
+
+DIPS har blitt partner i NTNU sitt senter for cyber and information security. Det er Trond Danielsen som er kontaktpunktet i DIPS 🔐

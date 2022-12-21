@@ -68,6 +68,7 @@
   padding: 20px;
   font-size: 2em;  
   width: 360px;
+  filter: drop-shadow(2px 2px 4px black);
 }
 
 button {

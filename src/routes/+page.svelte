@@ -126,7 +126,7 @@
 
   .steps-container {
     flex: 2;
-    max-width: 800px;
+    max-width: 740px;
     z-index: 10;
   }
 

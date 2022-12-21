@@ -34,5 +34,6 @@
     img {
         height: auto; 
         width: 360px;
+        border-style: none;
     }
 </style>

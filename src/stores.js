@@ -1,12 +1,13 @@
 import {writable, readable, derived} from "svelte/store";
 
 export function createDocumentStore() {
-    const {subscribe, update, set} = writable([]);    
+    const {subscribe, set} = writable([]);    
     return {
 		subscribe,		
 		init: () => {
 			return new Promise(async resolve => {                
                 const request = await fetch("/documents.json");
+                //const request = await fetch("https://raw.githubusercontent.com/thorstenbaek/foi-scrollytelling/main/static/documents.json");
                 const data = await request.json();
                 set(data.documents);
                 resolve();

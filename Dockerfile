@@ -2,7 +2,6 @@ FROM node:16 as build
 
 ENV NODE_ENV=production 
 
-
 WORKDIR /app
 COPY . .
 COPY package.json package-lock.json svelte.config.js ./
@@ -17,6 +16,7 @@ FROM node:16-alpine3.15
 WORKDIR /app
 COPY --from=build /app .
 
+ENV PORT=80
 
-EXPOSE 3000
+EXPOSE 80
 CMD ["node", "./build/index.js"]

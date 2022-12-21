@@ -1,5 +1,3 @@
-# September
-
 KNIPS-samarbeidet er i gang! 🎬15. september var det avspark på Fram Kino for innovasjonssamarbeidet mellom Nordlandssykehuset, DIPS og Deepinsight. 48 deltakere ble bedre kjent og jobbet i workshoper med de 5 satsingsområdene i samarbeidet. Se inspotalk om KNIPS fra 23. september 📣
 
 Denne uka har det vært Helseinnovasjonsuke i Bodø med masse aktivitet 🏥 DIPS har blant annet holdt foredrag om [Open DIPS](https://eur01.safelinks.protection.outlook.com/?url=https://companycast.live/player/9e93jrso/&data=05%7c01%7clgb%40dips.no%7c12153a16fc8f494cd17d08daa1f7d5d3%7c2f46c9197c11446584b2e354fb809979%7c0%7c0%7c638000383084374476%7cUnknown%7cTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7c3000%7c%7c%7c&sdata=CGOrTGjoFint/Z6QuFcYcWNjCj5O65QXbXEYUd7vdao%3D&reserved=0), vært med på å åpne LINKEN eHelselab på Nordlandssykehuset, deltatt på workshop om samskaping, hatt stand på sykehuset sammen med andre leverandører og deltatt på paneldebatt! 

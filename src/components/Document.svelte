@@ -20,11 +20,17 @@
     Loading...
 {:then markdown}
     <h1>{document.icon} {document.title}</h1>
-    <div>{@html marked(markdown)}</div>    
+    <div class="markdown">{@html marked(markdown)}</div>    
 {:catch error}
     {error}
 {/await}
 
 <style>
-
+    :global(img) {
+        width: 250px;
+        margin: 10px;
+        border-color: white;
+        border-style: solid;
+        border-width: 1px;
+    }
 </style>

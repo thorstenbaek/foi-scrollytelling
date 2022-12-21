@@ -5,14 +5,14 @@
 </script>
 
 {#if $current && $current.image}
-    {#key $current}
-    <div class="parent">
-        <img class="fullscreen"
-            transition:fade={{delay:10, duration:500}}
-            src={$current.image} 
-            alt={$current.title}
-        />
-    </div>
+    {#key $current.image}
+        <div class="parent">
+            <img class="fullscreen"
+                transition:fade={{delay:10, duration:500}}
+                src={$current.image} 
+                alt={$current.title}
+            />
+        </div>
     {/key}    
 {/if}
 
@@ -32,5 +32,6 @@
     img {
         height:100%; 
         width: auto;
+        border-style: none;
     }
 </style>

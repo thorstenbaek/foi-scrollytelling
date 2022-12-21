@@ -1,5 +1,3 @@
-# Juni
-
 Vi er tilbake fra DIPS Forum hvor F&I hadde sesjonen "Fremtidens behov i helsevesenet". Det ble også lanseringsfest for Open DIPS 🎉 i tillegg til at Hanne og Sverre ledet paneldebatten på partnersesjonen. 
 
 - Vi fikk fortalt om hvordan DIPS jobber med forskning og innovasjon
