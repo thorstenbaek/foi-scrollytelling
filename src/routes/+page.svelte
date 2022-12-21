@@ -15,28 +15,27 @@
     })
 </script>
 
+<section>
 {#await promise}
   Loading data...
 {:then}
-  {#if $documents}    
-          <h1 class="ontop"> 
-              Årskavalkade
-          </h1>
-          <h2>Forskning & Innovasjon 2022</h2>                  
+  {#if $documents}              
           <div class="section-container">
               <div class="steps-container">
                 <Scrolly bind:$index>              
                     {#each $documents as document, i}
                         <div class="step" class:active={$index === i}>
+                            <div class="top-spacer"/>        
                             <div class="step-content">
                                 {#if document.content}
                                     <Document {document}/>
                                 {/if}
                             </div>
+                            <div class="bottom-spacer"/>        
                         </div>
                     {/each}
-                    <div class="spacer" />
                 </Scrolly>
+                
               </div>
               <div class="sticky">              
                 <div class="fixed">
@@ -55,6 +54,7 @@
           <div class="spacer" />
   {/if}
 {/await}
+</section>
 
 <style>
 	:global(body) {
@@ -83,8 +83,12 @@
       color: white;        
   }
 
-  .spacer {
-    height: 40vh;
+  .top-spacer {
+    height: 50px;
+  }
+
+  .bottom-spacer {
+    height: 10vh;
   }
 
   .section-container {
@@ -94,7 +98,7 @@
   }
 
   .step {
-    min-height: 80vh;    
+    min-height: 80vh;
   }
 
   .step-content {
@@ -131,7 +135,7 @@
   }
 
   .ontop {
-    z-index: 1000;
+    z-index: 10;
   }
 	
 /* Comment out the following line to always make it 'text-on-top' */

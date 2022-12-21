@@ -3,9 +3,10 @@
         
         {
             "icon": "📰",
-            "title": "Desember",
+            "title": "Årskavalkade 2022",
             "date": "2022-12-22",
-            "content": "/newsletters/december.md"
+            "content": "/newsletters/december.md",
+            "image": "/december.jpg"
         },
         {
             "icon": "🥇",
@@ -42,7 +43,7 @@
             "date": "2022-09-15",
             "content": "/wins/knips.md",
             "image": "/knips.jfif", 
-            "illustration": "/linken.png"
+            "illustration": "/LINKENeHelselab-Logo-Horisontal-RGB.png"
         },           
         {            
             "icon": "🥇",

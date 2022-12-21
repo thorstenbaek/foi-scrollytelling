@@ -35,5 +35,6 @@
         height: auto; 
         width: 360px;
         border-style: none;
+        filter: drop-shadow(2px 2px 4px black);
     }
 </style>
