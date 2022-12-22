@@ -2,5 +2,5 @@ Eivinds kolsmonitor er en sensor som registrerer hver gang du hoster. Denne fikk
 
 På DIPS Kundepanel demonstrerte Eivind denne med integrasjon i DIPS Arena som viser kurver over alle registrerte host.
 
-![Arena](.\wins\kolsmonitor\arena-cough.png)
-![Blog](.\wins\kolsmonitor\arduinoblog.png)
+![Arena](./wins/kolsmonitor/arena-cough.png)
+![Blog](./wins/kolsmonitor/arduinoblog.png)

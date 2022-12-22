@@ -53,7 +53,7 @@ spec:
       containers:
         - name: foi-scrollytelling-app
           securityContext: {}
-          image: "thorstenbaek/foi-scrollytelling:v1.0.2"
+          image: "thorstenbaek/foi-scrollytelling:v1.0.3"
           imagePullPolicy: Always
           ports:
             - name: http
