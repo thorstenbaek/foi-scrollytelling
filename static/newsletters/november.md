@@ -9,6 +9,7 @@ Open DIPS-gjengen har vært på farten og snakket om hvordan vi legger til rette
 Neste uke er det d:hack. Det er over 300 påmeldte! 🎉 På grunn av KNIPS-samarbeidet blir det med 20 personer fra Nordlandssykehuset på Bodø-kontoret. Det er fortsatt mulig å få noen av disse koblet på ditt prosjekt eller være med på casene som allerede er planlagt. 
 
 ![DIPS Party!](./newsletters/november/20221118_122612.jpg)
-![DIPS Party!](./newsletters/november/20221118_153808.jpg)
-<!-- ![DIPS Party!](./newsletters/november/IMG_0782.heic)
-![DIPS Party!](./newsletters/november/IMG_0799.heic)   -->
+![Open DIPS Kake](./newsletters/november/20221117_130206.jpg)
+![F&I samling](./newsletters/november/20221118_153808.jpg)
+
+<!-- ![DIPS Party!](./newsletters/november/20221118_153808.jpg) -->

@@ -2,7 +2,7 @@
     "documents": [
         
         {
-            "icon": "📰",
+            "icon": "🎇",
             "title": "Årskavalkade 2022",
             "date": "2022-12-22",
             "content": "/newsletters/december.md",
@@ -21,15 +21,36 @@
             "title": "November",
             "date": "2022-11-30",
             "content": "/newsletters/november.md",
-            "image": "/november.png"
+            "image": "/november.jpg"
         },
+        {            
+            "icon": "🥇",
+            "title": "Kolsmonitor",
+            "date": "2022-11-14",
+            "content": "/wins/kolsmonitor.md",
+            "image": "/kolsmonitor.png"
+        },          
         {            
             "icon": "📰",
             "title": "Oktober",
             "date": "2022-10-31",
             "content": "/newsletters/october.md",
             "image": "/october.jfif"
-        },                  
+        },           
+        {            
+            "icon": "🥇",
+            "title": "Kaiku Health",
+            "date": "2022-10-19",
+            "content": "/wins/kaiku.md",
+            "image": "/kaiku.jpg"
+        },               
+        {            
+            "icon": "🥇",
+            "title": "Synne",
+            "date": "2022-10-4",
+            "content": "/wins/synne.md",
+            "image": "/synne.jpg"
+        },    
         {
             "icon": "📰",
             "title": "September",
@@ -37,6 +58,13 @@
             "content": "/newsletters/september.md",
             "image": "/september.jfif"
         },    
+        {
+            "icon": "🥇",
+            "title": "ClinCode",
+            "date": "2022-09-20",
+            "content": "/wins/clincode.md",
+            "image": "/clincode.jpg"            
+        },     
         {            
             "icon": "🥇",
             "title": "KNIPS",
@@ -44,7 +72,7 @@
             "content": "/wins/knips.md",
             "image": "/knips.jfif", 
             "illustration": "/LINKENeHelselab-Logo-Horisontal-RGB.png"
-        },           
+        },                       
         {            
             "icon": "🥇",
             "title": "Ryggkirurgi",
@@ -61,18 +89,39 @@
         },        
         {            
             "icon": "🥇",
+            "title": "Sommerstudenter",
+            "date": "2022-06-15",
+            "content": "/wins/sommerstudenter.md",
+            "image": "/sommerstudenter.jpeg"
+        },            
+        {            
+            "icon": "🥇",
             "title": "Open DIPS",
             "date": "2022-06-01",
             "content": "/wins/open-dips.md",
-            "image": "/june.jpg"
-        },            
+            "image": "/open-dips.jpg"
+        },              
         {
             "icon": "📰",
             "title": "April",
             "date": "2022-04-30",
             "content": "/newsletters/april.md",
             "image": "/april.jfif"
-        },
+        },        
+        {            
+            "icon": "🥇",
+            "title": "Lange briller",
+            "date": "2022-04-28",
+            "content": "/wins/langebriller.md",
+            "image": "/langebriller.PNG"
+        },      
+        {            
+            "icon": "🥇",
+            "title": "ProCardio",
+            "date": "2022-04-20",
+            "content": "/wins/procardio.md",
+            "image": "/procardio.jpg"
+        },     
         {
             "icon": "📰",
             "title": "Mars",            
@@ -80,12 +129,26 @@
             "content": "/newsletters/march.md",
             "image": "/march.jfif"
         },
+        {            
+            "icon": "🥇",
+            "title": "Unity",
+            "date": "2022-02-15",
+            "content": "/wins/unity.md",
+            "image": "/unity.png"
+        },     
         {
             "icon": "📰",
             "title": "Februar",            
             "date": "2022-02-28",
             "content": "/newsletters/february.md",
-            "image": "/february.jfif"            
-        }                               
+            "image": "/february.jpg"            
+        },                           
+        {
+            "icon": "",
+            "title": "God jul 🎅🎄 og godt nytt år! 💥🎉",            
+            "content": "/newsletters/january.md",
+            "date": "2022-01-01",
+            "image": "/january.png"           
+        }    
     ]
 }

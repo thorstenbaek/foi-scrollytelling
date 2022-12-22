@@ -27,7 +27,7 @@
                         <div class="step" class:active={$index === i}>
                             <div class="top-spacer"/>        
                             <div class="step-content">
-                                {#if document.content}
+                                {#if document}
                                     <Document {document}/>
                                 {/if}
                             </div>
@@ -46,11 +46,7 @@
                   {/if}
                 </div>
               </div>
-          </div>
-
-          <h1> 
-              God jul 🎅🎄 og godt nytt år! 💥🎉
-          </h1>
+          </div>          
           <div class="spacer" />
   {/if}
 {/await}
@@ -113,7 +109,7 @@
   }
 
 	.step.active .step-content {
-		background: rgba(6, 8, 45, 0.6);
+		background: rgba(6, 8, 45, 0.75);
 		color: rgba(255, 255, 255, 1.0);
 	}
 	

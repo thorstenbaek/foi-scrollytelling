@@ -15,19 +15,21 @@
 	}
 
 </script>
-    
-{#await loadMarkdown(document.content)}
-    Loading...
-{:then markdown}
-    <h1>{document.icon} {document.title}</h1>
-    <div class="markdown">{@html marked(markdown)}</div>    
-{:catch error}
-    {error}
-{/await}
 
+<h2>{document.icon} {document.title}</h2>
+{#if document.content}
+    {#await loadMarkdown(document.content)}
+        Loading...
+    {:then markdown}
+
+        <div class="markdown">{@html marked(markdown)}</div>    
+    {:catch error}
+        {error}
+    {/await}
+{/if}
 <style>
     :global(img) {
-        width: 250px;
+        width: 320px;
         margin: 10px;
         border-color: white;
         border-style: solid;

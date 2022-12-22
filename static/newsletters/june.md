@@ -11,3 +11,8 @@ En annen viktig nyhet er at vi har etablert Team Vanguard i DIPS F&I 👏 Teamet
 
 Siste gladsak er at ryggkirurgiprosjektet vi skal ha sammen med UNN, UiT, DeepInsight og Senter for pasientnær kunstig intelligens (SPKI) har fått innovasjonsmilder fra Helse Nord 💸 Vi skal sammen lage et samvalgsverktøy hvor registerdata brukes for å vurdere om en pasient bør ryggopereres eller ikke. 
 
+![Liv](/newsletters/june/1E3A3850.jpg)
+![Thor](/newsletters/june/1E3A3853.jpg)
+![Bjørn](/newsletters/june/1E3A3924.jpg)
+![Hanne](/newsletters/june/1E3A3918.jpg)
+![Sverre](/newsletters/june/1E3A3914.jpg)
