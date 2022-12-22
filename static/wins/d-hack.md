@@ -14,5 +14,4 @@ Håper dere lagde, fikset eller lærte noe.
 ![d-hack](./wins/d-hack/IMG_20221209_102430_417.jpg)
 ![d-hack](./wins/d-hack/IMG_20221209_102524_941.jpg)
 ![d-hack](./wins/d-hack/d-hack-developers.png)
-![d-hack](./wins/d-hack/old-hand.png)
 ![d-hack](./wins/d-hack/hackers.png)
