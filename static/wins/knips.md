@@ -14,6 +14,7 @@ Her kan vi simulere og utforske ny teknologi. Mange av prosjektene våre utvikle
 Bonus win: 
 - 20 deltakere fra Nordlandssykehuset på d:hack som digget å jobbe med dere! Takk til alle som bidro. 
 
+![Fram kino](/wins/knips/knips.jfif)
 ![Linken e-helse-lab](/wins/knips/a0fce1e0-1519-43fe-9197-e277648a15ad.jpeg)
 ![Workshop](/wins/knips/workshop.png)
 ![Workshop2](/wins/knips/workshop2.png)

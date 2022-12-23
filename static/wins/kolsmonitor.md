@@ -1,4 +1,4 @@
-Eivinds kolsmonitor er en sensor som registrerer hver gang du hoster. Denne fikk masse omtale i flere internasjonale kanaler. Blant annet Arduine Blog, Hackaday og Edge Impulse.
+Eivinds kolsmonitor er en sensor som registrerer hver gang du hoster. Denne fikk masse omtale i flere internasjonale kanaler. Blant annet Arduino Blog, Hackaday og Edge Impulse.
 
 På DIPS Kundepanel demonstrerte Eivind denne med integrasjon i DIPS Arena som viser kurver over alle registrerte host.
 

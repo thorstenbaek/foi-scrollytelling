@@ -4,4 +4,5 @@ I 2022 har William jobbet deltid i Team Open med på å utvikle Synne. Et verkt�
 
 Vi har også testet ut Syntetisk journaltekst generert med [ChatGPT](https://chat.openai.com). Dette gir oss nye muligheter for generering av syntetisk journaltekst som vi ønsker å kombinere med Synne for bruk internt i utviklingsavdelingen, i Team Open og for ekstern demonstrasjon av Arena. 
 
+![William](./wins/synne/william.jpg)
 ![Syntetisk Epikrise](./wins/synne/epikrise.png)

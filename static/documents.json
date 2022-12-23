@@ -70,7 +70,7 @@
             "title": "KNIPS",
             "date": "2022-09-15",
             "content": "/wins/knips.md",
-            "image": "/knips.jfif", 
+            "image": "/knips.png", 
             "illustration": "/LINKENeHelselab-Logo-Horisontal-RGB.png"
         },                       
         {            
@@ -120,7 +120,7 @@
             "title": "ProCardio",
             "date": "2022-04-20",
             "content": "/wins/procardio.md",
-            "image": "/procardio.jpg"
+            "image": "/procardio.png"
         },     
         {
             "icon": "📰",
@@ -134,7 +134,7 @@
             "title": "Unity",
             "date": "2022-02-15",
             "content": "/wins/unity.md",
-            "image": "/unity.png"
+            "image": "/unity.jpg"
         },     
         {
             "icon": "📰",

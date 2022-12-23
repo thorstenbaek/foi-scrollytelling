@@ -6,4 +6,6 @@ Vi jobber med Helse Nord IKT, Deepinsight og Senter for pasientnær kunstig inte
 
 Win: brukerinnsiktsfasen er gjort og nå skal vi vise MVP på risikoscore i DIPS. 
 
-Bonus win: jobbe sammen med Deepinsigth, Bifrost og klinikken.
+Bonus win: jobbe sammen med Deepinsight, Bifrost og klinikken.
+
+![Karl Øyvind Mikaelsen](/wins/ryggkirurgi/spki.png)
